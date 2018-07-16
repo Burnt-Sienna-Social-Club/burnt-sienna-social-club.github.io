@@ -7,12 +7,12 @@
     <title>Burnt Sienna Social Club</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet"  type="text/css" media="screen" href="./css/custom.css"> 
-     
+    <script src="./jss/script.js"></script>  
    
 </head>
 
 <body>
-    <!-- Main Nav Bar -->
+    <!-- Main Nav Bar with dropdown feature -->
     <header class="mainHeader">
       <div class="navContainer">
             <nav class="main-nav">
@@ -20,8 +20,16 @@
                 <ul class="main-nav">
                         <li class="active"><a href="#">Home</a></li>
                         <li class="active"><a href="#">Random Stripes</a></li>
-                        <li class="active"><a href="#">Events</a></li>
-                        <li class="active"><a href="#">Contact</a></li>
+                        <li class="active"><a href="#">Contact</a>
+                      <div class="dropdown">
+                        <li class="active"><a href="#" onclick="myFunction()" class="dropbtn ">Classes</a></li>
+                          <div id="myDropdown" class="dropdown-content">
+                            <a href="#">Knit</a>
+                            <a href="#">Sew</a>
+                            <a href="#">Dye</a>
+                          </div>
+                      </div>
+                        
                 </ul>
             </nav>
       </div>
