@@ -12,10 +12,30 @@
 </head>
 
 <body>
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">Home</a>
+    <a href="#">Random Stripes</a>
+    <a href="#">Contact</a>
+    <a href="#">Interests</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="smlhead">
+<span id="more" class="morebtn" onclick="openNav()">More</span>
+</div>
     <!-- Main Nav Bar with dropdown feature -->
     <header class="mainHeader">
-      <div class="navContainer">
-            <nav class="main-nav">
+      <div id="top"  class="navContainer">
+            <nav class="">
                 <img class="navLogo" src="./logo/hookRopeLogo.png" alt="logo">
                 <ul class="main-nav">
                         <li class="active"><a href="#">Home</a></li>
@@ -41,6 +61,7 @@
 
     </header>
     <!-- Mulity picture banner -->
+   
 <header class="pictureHeader">
     <div class"pictureHeader pictureWrapper">
       <section class="bannergrid1">
@@ -144,6 +165,11 @@
                 <img class="" src="./img/dye.jpg" alt="Card image cap">
                 <h1>dye</h1>
               </div>
+
+              <div id="water" class="water card">
+                  <img class="" src="./img/" alt="Card image cap">
+                  <h1>dye</h1>
+                </div>
                       
               <div id="comm" class="comm card">
                 <img class="" src="./img/bwgrls.jpg" alt="Card image cap">
@@ -166,10 +192,18 @@
                           
               </div>
 
+             
+             
+             <div class="bck2top" >
+
+                <a href="#top">Back to Top</a>
+
+             </div>
+             
+             
               <script src="./jss/jquery-3.3.1.min.js"></script>
               <script src="./jss/script.js"></script>               
                 
-
     </main>
 
 

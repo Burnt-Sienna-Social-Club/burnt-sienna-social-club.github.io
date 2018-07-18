@@ -5,90 +5,66 @@ body {
 
 }
 
-/* Navigation Bar Styling  */
-.mainHeader {
-    top: .5rem;
-    z-index: 20;
-    margin-left: .5rem;
-    margin-right: .5rem;
-}
-
-.mainHeader,
-.main-nav,
-.main-nav a,
-li a {
-    background-color: #9d9d9d;
-} 
-
-
-.navLogo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-block-size: 10rem;
-    border-radius: 10%;
-    z-index: 23;
-    margin-top: 0;
-}
-/* .dropdown, */
-.main-nav a,
-.dropbtn {
-	text-align: center;
-    display: block;
+.smlhead {
+    background-color: #717171;
+    width: 98%;
+    margin: auto;
     padding: .5rem;
-    display: block;
+
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 99;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
     position: relative;
-    max-width: 100%;
-	font-size: 1rem;
-	color: white;
-    text-transform: uppercase;
+    top: 25%; 
+    width: 100%; 
+    text-align: center; 
+    margin-top: 2rem; 
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
     text-decoration: none;
-    z-index: 20;
+    font-size: 36px;
+    color: #818181;
+    display: block; 
+    transition: 0.3s; 
 }
 
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
 }
 
-.dropbtn,
-.main-nav a:hover {
-    color: #e97451;
-    cursor: pointer;
-}
-
-.dropdown-content a:hover {
-    background-color: #9d9d9d;
-}
-
-.main-nav a:active {
-    background-color: #fffff0;
-    color: #9d9d9d;
-}
-
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
+/* Position the close button (top right corner) */
+.overlay .closebtn {
     position: absolute;
-    background-color: #9d9d9d;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    color: #fffff0;
-    padding: 12px 16px;
-    text-decoration: none;
-}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {
-    display:block;
+/* main Navigation Bar Styling  */
+.navLogo,
+.active {
+    display: none;
 }
 
 /* picture banner */
@@ -207,6 +183,23 @@ ul {
   }
   
 
+/* back to top button styling */
+
+.bck2top {
+    text-transform: uppercase;
+    Background-color:  #9d9d9d;
+    padding: .5rem;
+    margin-bottom: .5rem;
+    margin-right: 1rem;
+    border-radius: 40%;
+    z-index: 90; 
+    max-width: 7rem;
+    position: sticky;
+    bottom: 0;
+    display: block;
+    float: right;
+}
+
 
 
 
@@ -229,14 +222,116 @@ footer {
 
 /* nav bar media queries*/
 
-@media (min-width: 769px) {
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+            }
+    
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media (min-width: 700px) {
+    .morebtn,
+    .smlhead {
+        display: none;
+    }
+    
+    .mainHeader,
+    .main-nav,
+    .main-nav a,
+    li a {
+        background-color: #9d9d9d;
+       
+    } 
+    
+    
+    .navLogo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-block-size: 10rem;
+        border-radius: 10%;
+        z-index: 23;
+        margin-top: 0;
+    }
+
+    /* .dropdown, */
+    .main-nav a,
+    .dropbtn {
+        text-align: center;
+        display: block;
+        padding: .5rem;
+        display: block;
+        position: relative;
+        max-width: 100%;
+        font-size: 1rem;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+        z-index: 20;
+    }
+    
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .dropbtn,
+    .main-nav a:hover {
+        color: #e97451;
+        cursor: pointer;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #9d9d9d;
+    }
+    
+    .main-nav a:active {
+        background-color: #fffff0;
+        color: #9d9d9d;
+    }
+    
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #9d9d9d;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: #fffff0;
+        padding: 12px 16px;
+        text-decoration: none;
+    }
+    
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+        display:block;
+    }
             .hide {
                 display: block;
             }
+            
             .mainHeader{
                 position: sticky;
+                top: .5rem;
                 width: 98%;
                 box-shadow: .25rem .25rem 2px 1px lightgray; 
+                margin-top: .5rem;
+                margin-left: .5rem;
+                z-index: 100;
             }
            
             .navContainer {
@@ -299,8 +394,6 @@ footer {
                 grid-column: 1 / span 6;
                 grid-row: 2;
                 margin-top: -10rem;
-               
-                /* overflow: hidden; */
             }
 
             .yarn {  
@@ -345,10 +438,14 @@ footer {
 
     .navLogo {
         margin-top: -2rem;
+
     }
 
-    .main-nav li {
+    .main-nav {
         float: right;
+    }
+    .main-nav li {
+        float: left;
     }
 
     .navContainer,
