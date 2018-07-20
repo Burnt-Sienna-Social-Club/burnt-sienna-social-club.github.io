@@ -10,6 +10,24 @@ body {
     width: 98%;
     margin: auto;
     padding: .5rem;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #f1f1f1;
+    font-size: 1rem;
+    position: sticky;
+    top: .2rem;
+    z-index: 90;
+    display: block;
+    float: left;
+
+}
+
+.smltitle {
+    display: block;
+    float: right;
+    margin: 0;
+    font-family: 'Allerta Stencil', sans-serif;
+    color: #f1f1f1;
+    font-size: 1rem;
 
 }
 
@@ -22,9 +40,8 @@ body {
     z-index: 99;
     left: 0;
     top: 0;
-    background-color: rgb(0,0,0); /* Black fallback color */
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
+    background-color: rgba(235,123,89, 0.9); 
+    overflow-x: hidden;
     transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
@@ -45,6 +62,12 @@ body {
     color: #818181;
     display: block; 
     transition: 0.3s; 
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+.overlayLogo{
+    max-width: 10rem;
+    margin-left: 1rem;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -98,6 +121,23 @@ body {
     margin: 1rem;
     border-radius: 5px;
 }
+
+.social {
+    max-width: 75%;
+    position: relative; 
+    overflow: auto;
+    display: block;
+    margin: auto;
+}
+
+.picture {
+    max-width: 95%;
+    margin: auto;
+    display: block;
+    z-index: 6;
+}
+
+
 
 /* -----------------------slideshow styling------------------------------------- */
 /* Slideshow container */
@@ -160,44 +200,33 @@ body {
   }
   
   .active, .dot:hover {
-    background-color: #717171;
+    background-color: #e97451;
   }
 
-  
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @-webkit-keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
+
 
 /* back to top button styling */
 
 .bck2top {
     text-transform: uppercase;
-    Background-color:  #9d9d9d;
     padding: .5rem;
     margin-bottom: .5rem;
     margin-right: 1rem;
-    border-radius: 40%;
+    border-radius: 50%;
     z-index: 90; 
     max-width: 7rem;
     position: sticky;
-    bottom: 0;
+    bottom: .5rem;
     display: block;
     float: right;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #717171;
+}
+
+.bck2top a {
+    color: #f1f1f1;
+    text-decoration: none;
+
 }
 
 
@@ -245,7 +274,7 @@ footer {
     .main-nav,
     .main-nav a,
     li a {
-        background-color: #9d9d9d;
+        background-color:#717171;
        
     } 
     
@@ -273,6 +302,7 @@ footer {
         color: white;
         text-transform: uppercase;
         text-decoration: none;
+        font-family: 'Allerta Stencil', sans-serif;
         z-index: 20;
     }
     
