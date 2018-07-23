@@ -109,8 +109,7 @@ body {
     margin: .5rem;
     box-shadow: 0 1px 0 0 #9d9d9d;
     display: flex;
-    max-width: 98%;
-    flex-direction: column;
+    /* max-width: 98%; */
     flex-wrap: wrap;
 }
 
@@ -121,13 +120,16 @@ body {
     border-radius: 5px;
 }
 
+
+
 .social {
-    max-width: 75%;
     position: relative; 
-    overflow: auto;
+    overflow: hidden;
     display: block;
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
+
 
 .picture {
     max-width: 95%;
@@ -255,10 +257,10 @@ footer {
 
 
 /* --------------MEDIA QUERIES--------------- */ 
+/* Media Queries one for very small screens, then one switch for 700px & one switch for 1025px */
 
 
 /* nav bar media queries*/
-
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media (max-height: 450px) {
     .overlay a {
@@ -272,6 +274,7 @@ footer {
     }
 }
 
+/* 700px media query focus on showing main nav bar and adjusting multi-picture banner */
 @media (min-width: 700px) {
     .morebtn,
     .smlhead {
@@ -381,7 +384,7 @@ footer {
             } 
             .main-nav li {
                 display: inline-block;
-                border-left: 5rem;
+                margin-left: -1rem;
             }
 
             .main-nav li a {
@@ -474,26 +477,17 @@ footer {
                 justify-content: center;
             }
 
-            .card {
-                flex-grow: 2;
-            }
-
-            .social {
-                flex-grow: 1;
-            }
             .instagram-media {
                 max-width: 40%;
                 max-height: 75%;
             }
 
-            .about,
-            .comm {
-                flex-grow: 4;
-            }
+            
 
 
 }
 
+/* large screen media query focus on changing header, muti-picture banner and main content format */
 @media (min-width: 1025px) {
 
     .navLogo {
@@ -502,6 +496,7 @@ footer {
     }
 
     .main-nav {
+        display: block;
         float: right;
     }
     .main-nav li {
@@ -510,7 +505,8 @@ footer {
         background-color: #717171;
     }
 
-    .main-nav li a {
+    .main-nav li a,
+    .dropbtn {
         font-size: 1.5rem;
     }
 
@@ -586,6 +582,7 @@ footer {
     /* media query for flexbox large screen */
 
     .mainContainer{
+        
         
     }
 
