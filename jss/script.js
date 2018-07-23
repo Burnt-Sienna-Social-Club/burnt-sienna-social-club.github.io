@@ -1,11 +1,11 @@
-/* Open when someone clicks on the span element */
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
+/* Open when someone clicks on Small menu button  */
+function openMenu() {
+  document.getElementById("smlMenu").style.width = "100%";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
+function closeMenu() {
+  document.getElementById("smlMenu").style.width = "0%";
 }
 
 
@@ -79,16 +79,16 @@ function secCurrentSlide(n) {
 
 function secShowSlides(n) {
   var j;
-  var secslides = document.getElementsByClassName("secSlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > secslides.length) {secSlideIndex = 1} 
-  if (n < 1) {secSlideIndex = secslides.length}
-  for (j = 0; j < secslides.length; j++) {
-      secslides[j].style.display = "none"; 
+  var secSlides = document.getElementsByClassName("secSlides");
+  var secDots = document.getElementsByClassName("secDot");
+  if (n > secSlides.length) {secSlideIndex = 1} 
+  if (n < 1) {secSlideIndex = secSlides.length}
+  for (j = 0; j < secSlides.length; j++) {
+      secSlides[j].style.display = "none"; 
   }
-  for (j = 0; j < dots.length; j++) {
-      dots[j].className = dots[j].className.replace(" active", "");
+  for (j = 0; j < secDots.length; j++) {
+      secDots[j].className = secDots[j].className.replace(" active", "");
   }
-  secslides[secSlideIndex-1].style.display = "block"; 
-  dots[secSlideIndex-1].className += " active";
+  secSlides[secSlideIndex-1].style.display = "block"; 
+  secDots[secSlideIndex-1].className += " active";
 }

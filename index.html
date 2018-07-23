@@ -1,37 +1,38 @@
 <!doctype html>
 <html>
 <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Burnt Sienna Social Club</title>
+    <link rel="icon" href="./logo/plainhook.png" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet"  type="text/css" media="screen" href="./css/custom.css"> 
     <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet"> 
-   
+    
 </head>
 
 <body>
-<!-- The overlay -->
-<div id="myNav" class="overlay">
+<!-- The overlay menu for mobile view only  -->
+<div id="smlMenu" class="overlay">
 
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- Button to close the overlay menu -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
 
-  <!-- Overlay content -->
+  <!-- Overlay menu content -->
   <div class="overlay-content">
       <img class="overlayLogo" src="./logo/hookRopeLogo.png" alt="logo">
-    <a href="#">Home</a>
-    <a href="#">Random Stripes</a>
+    <a href="#top">Home</a>
+    <a href="#">Events</a>
     <a href="#">Contact</a>
     <a href="#">Interests</a>
   </div>
 
 </div>
 
-<!-- Use any element to open/show the overlay navigation menu -->
+<!-- header for overlay menu in mobile view only-->
 <div class="smlhead">
-<span id="more" class="morebtn" onclick="openNav()">More</span>
+<span id="menu" class="menuBtn" onclick="openMenu()">Menu</span>
 <span class="smltitle">Burnt Sienna Social Club</span>
 </div>
     <!-- Main Nav Bar with dropdown feature -->
@@ -40,9 +41,9 @@
             <nav class="">
                 <img class="navLogo" src="./logo/whthook.png" alt="logo">
                 <ul class="main-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li class="active"><a href="#">Random Stripes</a></li>
-                        <li class="active"><a href="#">Contact</a>
+                        <li class="active"><a href="#top">Home</a></li>
+                        <li class="active"><a href="#top">Events</a></li>
+                        <li class="active"><a href="#">Contact</a></li>
                       <div class="dropdown">
                         <li class="active"><a href="#" onclick="myFunction()" class="dropbtn ">Interests</a>
                           <div id="myDropdown" class="dropdown-content">
@@ -51,16 +52,12 @@
                             <a href="#dye">Dye</a>
                             <a href="#comm">Community</a>
                             <a href="#more">More</a>
-                            
-
                           </div>
-                        </li>  
-                      </div>
-                        
-                </ul>
-            </nav>
-      </div>
-
+                        </li> 
+                      </div> 
+                    </ul>
+                  </nav>
+            </div>
     </header>
     <!-- Mulity picture banner -->
    
@@ -72,6 +69,8 @@
          <img class="pigment hide" src="./img/savingPNG.jpg">
           <img class="community" src="./img/communitylrg.png">
          <img class="yarn hide" src="./img/popknit2.jpg">
+         <img class="boobies hide" src="./img/transparent_boobies_two.png">
+         <img class="butterfly hide" src="./img/siennabfly.jpg">
 
       </section>
     </div>
@@ -84,22 +83,28 @@
                                                     <!-- Slideshow container -->
                                 <div class="slideshow-container">
 
-                                  <!-- Full-width images with number and caption text -->
+                                  <!-- slideshow images -->
                                   <div class="mySlides fade">
                                     
-                                    <img src="./img/preview.jpg" class="slideImg">
+                                    <img src="./img/preview.jpg" class="slideImg"  alt="group of people in photobooth">
                                     
                                   </div>
 
                                   <div class="mySlides fade">
                                     
-                                    <img src="./img/dye.jpg" class="slideImg" >
+                                    <img src="./img/colorrun.jpg" class="slideImg" alt="group project after finishing race" >
                                     
                                   </div>
 
                                   <div class="mySlides fade">
                                     
-                                    <img src="./img/pompom.jpg" class="slideImg" >
+                                    <img src="./img/grlsout.jpg" class="slideImg" alt="women laughing in front of cloudy sky" >
+                                    
+                                  </div>
+
+                                  <div class="mySlides fade">
+                                    
+                                    <img src="./img/IMG_0638.jpg" class="slideImg" alt="women holding basket" >
                                     
                                   </div>
 
@@ -113,37 +118,46 @@
                                 <div style="text-align:center">
                                   <span class="dot" onclick="currentSlide(1)"></span> 
                                   <span class="dot" onclick="currentSlide(2)"></span> 
-                                  <span class="dot" onclick="currentSlide(3)"></span> 
+                                  <span class="dot" onclick="currentSlide(3)"></span>
+                                  <span class="dot" onclick="currentSlide(4)"></span> 
                                 </div>
 
-                    <h1>What we are about</h1>
+                    <h1>Who We Are</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget feugiat lorem, eget commodo erat. Phasellus et suscipit metus. Nullam dictum nisi ac mi porttitor, nec rutrum eros tristique. Aenean laoreet urna eget augue consectetur, venenatis posuere est finibus. Ut volutpat lectus quis sem varius, sed semper tellus imperdiet. Aliquam justo justo, pretium eget dapibus sed, commodo dignissim mi. Duis vehicula massa congue urna gravida mollis. Sed vitae augue eget eros venenatis pulvinar. Duis cursus, augue ac consectetur accumsan, purus nulla rhoncus mauris, non viverra mi mi a turpis. In et lacinia ipsum, sed maximus dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </div>
                     
               <div id="sew" class="sew card">
-                <img class="picture" src="./img/bdaydressclose.jpg" alt="Card image cap">
+                <img class="picture" src="./img/bdaydressclose.jpg" alt="upclose view of dress">
                 <h1>Sew</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum viverra tempus. Sed viverra nibh ut ipsum vulputate, vel tincidunt lacus blandit. Nullam maximus augue ut mattis fermentum. Curabitur faucibus volutpat urna ornare aliquet. Pellentesque faucibus placerat nisl, ut blandit mi pulvinar vitae. Vivamus faucibus purus eget purus aliquet, sed semper est bibendum. Phasellus blandit in mi vitae ultricies. Suspendisse vitae orci venenatis, egestas nulla eget, posuere neque. Etiam id iaculis tellus. Ut rutrum non.</p>
               </div>
         
               <div id="knit" class="knit card">
-                      <!-- Slideshow container -->
+                      <!-- Second Slideshow container -->
                       <div class="slideshow-container">
 
-                        <!-- images in slides -->
+                        <!-- images in knit slides -->
                         <div class="secSlides fade">
                           
-                          <img src="./img/pompom.jpg" class="slideImg">
+                          <img src="./img/coffeeKnit.jpg" class="slideImg" alt="knitting sweater">
 
                         </div>
 
-                        <div class="secSlides fade clearfix">
+                        <div class="secSlides fade">
                           
-                          <img src="./img/dye.jpg" class="slideImg" >
+                          <img src="./img/IMG_3381.jpg" class="slideImg" alt="knitting hat work in progress">
                           
                         </div>
 
-                        <div class="secSlides fade clearfix">
+                        <div class="secSlides fade">
                           
-                          <img src="./img/pompom.jpg" class="slideImg" >
+                          <img src="./img/pompom.jpg" class="slideImg" alt="close up of pink pompom" >
+                          
+                        </div>
+
+                        <div class="secSlides fade">
+                          
+                          <img src="./img/swt3.jpg" class="slideImg" alt="close up view of cabled sweater" >
                           
                         </div>
 
@@ -155,43 +169,54 @@
 
                       <!-- The dots/circles -->
                       <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span> 
-                        <span class="dot" onclick="currentSlide(2)"></span> 
-                        <span class="dot" onclick="currentSlide(3)"></span> 
+                        <span class="secDot" onclick="secCurrentSlide(1)"></span> 
+                        <span class="secDot" onclick="secCurrentSlide(2)"></span> 
+                        <span class="secDot" onclick="secCurrentSlide(3)"></span>
+                        <span class="secDot" onclick="secCurrentSlide(3)"></span> 
                       </div>
 
-                <h1>knit</h1>
+                <h1>Knit</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis viverra condimentum. Proin eleifend hendrerit nisl, ac interdum quam porttitor eu. Quisque non cursus risus.</p>
               </div>
                     
               <div id="dye" class="dye card">
                 <img class="picture" src="./img/dye.jpg" alt="Card image cap">
-                <h1>dye</h1>
+                <h1>Dye</h1>
+                <p>Proin blandit pulvinar rutrum. Morbi semper nibh sit amet porta aliquam. Donec vel magna enim. Aliquam gravida congue ipsum, at.</p>
               </div>
 
               <div id="water" class="water card">
                   <img class="picture" src="./img/boobie 1.png" alt="Card image cap">
-                  <h1>dye</h1>
+                  <h1>Watercolor</h1>
+                  <p>In hac habitasse platea dictumst. Phasellus vestibulum, enim ac cursus interdum, lectus libero ornare nisl, ut mollis enim orci at ligula. Curabitur quis sem nec orci hendrerit semper sed at est. Sed eget nibh lectus. Maecenas ac mi finibus, vestibulum.</p>
                 </div>
                       
               <div id="comm" class="comm card">
                 <img class="picture" src="./img/bwgrls.jpg" alt="Card image cap">
-                <h1>community </h1>
+                <h1>Community </h1>
+                <p>Maecenas condimentum elementum tempor. Proin eu nunc vitae ex maximus eleifend. Phasellus imperdiet arcu eget sagittis tempor. Proin felis turpis, dignissim et mi sed, egestas pellentesque velit. Vestibulum at aliquam nisi. Aliquam diam ipsum, tempus sit amet est sit amet, vestibulum placerat odio. Ut ultricies lacus lectus. Quisque bibendum lacus id eros consectetur, in faucibus risus vehicula. Nunc iaculis varius velit quis rhoncus. Sed dignissim sagittis posuere. Fusce at magna eu nibh faucibus ultrices vitae eu nunc. Phasellus tincidunt gravida ligula, nec convallis nisi. Nulla efficitur ac ligula eu pellentesque. Integer molestie rutrum nibh ac cursus.
+
+                  Pellentesque lacinia blandit aliquet. Suspendisse ut volutpat massa, non varius velit. Curabitur odio mi, aliquet sit amet eros nec, tincidunt imperdiet nisi. Fusce dui ligula, placerat non eros in, varius volutpat orci. Donec vel tempor ligula. Aliquam erat volutpat. Etiam placerat dui nec nulla ornare fringilla. Aliquam id arcu ante. Fusce nec leo in tortor sodales congue. Quisque rhoncus neque enim, sit amet semper diam blandit in. Duis volutpat, enim ut gravida sagittis, risus tellus sagittis est, vel suscipit mauris nisl quis sem. Phasellus elementum nulla vel diam dignissim sagittis. Nulla facilisi. Nullam a arcu id quam sagittis ultricies. Sed et augue magna.</p>
               </div>
                     
               <div id="more" class="more card">
-                <img class="picture" src="./img/IMG_2328.jpg" alt="Card image cap">
-                <h1>more</h1>
+                <img class="picture" src="./img/tiny-0012.jpg" alt="catered food display">
+                <h1>More</h1>
+                <p>Maecenas condimentum elementum tempor. Proin eu nunc vitae ex maximus eleifend. Phasellus imperdiet arcu eget sagittis tempor. Proin felis turpis, dignissim et mi sed, egestas pellentesque velit. Vestibulum at aliquam nisi. Aliquam diam ipsum, tempus sit amet est sit amet, vestibulum placerat odio. Ut ultricies lacus lectus. Quisque bibendum lacus id eros consectetur, in faucibus risus vehicula. Nunc iaculis varius velit quis rhoncus. Sed dignissim sagittis posuere. Fusce at magna eu nibh faucibus ultrices vitae eu nunc. Phasellus tincidunt gravida ligula, nec convallis nisi. Nulla efficitur ac ligula eu pellentesque. Integer molestie rutrum nibh ac cursus.
+
+                  Pellentesque lacinia blandit aliquet. Suspendisse ut volutpat massa, non varius velit. Curabitur odio mi, aliquet sit amet eros nec, tincidunt imperdiet nisi. Fusce dui ligula, placerat non eros in, varius volutpat orci. Donec vel tempor ligula. Aliquam erat volutpat. Etiam placerat dui nec nulla ornare fringilla. Aliquam id arcu ante. Fusce nec leo in tortor sodales congue. Quisque rhoncus neque enim, sit amet semper diam blandit in. Duis volutpat, enim ut gravida sagittis, risus tellus sagittis est, vel suscipit mauris nisl quis sem. Phasellus elementum nulla vel diam dignissim sagittis. Nulla facilisi. Nullam a arcu id quam sagittis ultricies. Sed et augue magna.</p>
               </div>
                     
               <div id="social" class="social card">
                 <div class="instagram-media picture">
                   <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/BlYON_ogaWJ/" data-instgrm-version="9" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BlYON_ogaWJ/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Burnt Sienna Social Club (@burntsiennasocial)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-07-18T15:43:51+00:00">Jul 18, 2018 at 8:43am PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
               <h1>Social</h1>
+              <p>Follow us on Social Media, come on it will be fun!</p>
             </div>
             </div>
                           
               </div>
-
+              
              
              
              <div class="bck2top" >
@@ -201,9 +226,9 @@
              </div>
              
              
+           <!-- My javscript links -->
               <script src="./jss/jquery-3.3.1.min.js"></script>
-              <script src="./jss/script.js"></script>               
-                
+              <script src="./jss/script.js"></script>    
     </main>
 
 
