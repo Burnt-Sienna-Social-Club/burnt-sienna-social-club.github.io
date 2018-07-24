@@ -39,7 +39,7 @@ body {
     z-index: 99;
     left: 0;
     top: 0;
-    background-color: rgba(235,123,89, 0.9); 
+    background-color: rgba(156,49,8, 0.9); 
     overflow-x: hidden;
     transition: 0.5s; 
 }
@@ -99,13 +99,13 @@ body {
 }
 
 .pictureHeader div {
-    border: 10px solid #e97451;
+    border: 10px solid #9C3108;
 }
 
 /* Main Body Styling */
 .mainContainer {
     padding: 1rem;
-    background: #e97451;
+    background: #9C3108;
     margin: .5rem;
     box-shadow: 0 1px 0 0 #9d9d9d;
     display: flex;
@@ -218,7 +218,6 @@ h1 {
 /* back to top button styling */
 
 .bck2top {
-    text-transform: uppercase;
     padding: .5rem;
     margin-bottom: .5rem;
     margin-right: 1rem;
@@ -235,8 +234,6 @@ h1 {
 
 .bck2top a {
     color: #f1f1f1;
-    text-decoration: none;
-
 }
 
 
@@ -305,7 +302,7 @@ footer {
     .dropbtn {
         text-align: center;
         display: block;
-        padding: .5rem;
+        padding: 1rem;
         display: block;
         position: relative;
         max-width: 100%;
@@ -477,10 +474,7 @@ footer {
                 justify-content: center;
             }
 
-            .instagram-media {
-                max-width: 40%;
-                max-height: 75%;
-            }
+           
 
             
 
@@ -581,10 +575,11 @@ footer {
 
     /* media query for flexbox large screen */
 
-    .mainContainer{
-        
-        
-    }
+    /* .mainContainer{
+           
+    } */
+
+    
 
 
 }
