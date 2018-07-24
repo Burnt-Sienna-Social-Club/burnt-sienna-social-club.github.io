@@ -9,6 +9,5 @@ Uses javascript & jquery functions in menu dropdowns, overlays, and picture slid
 There is a multi-picture banner that used css grid that does not display well in IE or Edge browers. 
 
 ****unfinished features****
--contact form 
--click out of overlay when you click a link
--dropdown bar on interests section of overlay 
+-seperate events page
+-Overlay Functions: close when you click links, links are none active in overlay (contact form & dropdown)

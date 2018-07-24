@@ -21,7 +21,7 @@
 
   <!-- Overlay menu content -->
   <div class="overlay-content">
-      <img class="overlayLogo" src="./logo/hookRopeLogo.png" alt="logo">
+      <img class="overlayLogo" src="./logo/whthook.png" alt="logo">
     <a href="#top">Home</a>
     <a href="#">Events</a>
     <a href="#">Contact</a>
@@ -43,10 +43,37 @@
                 <ul class="main-nav">
                         <li class="active"><a href="#top">Home</a></li>
                         <li class="active"><a href="#top">Events</a></li>
-                        <li class="active"><a href="#">Contact</a></li>
+                        <li class="active"><button id="myBtn" class="contact"><a href="#">Contact</a></button></li>
+                                <div id="myModal" class="modal">
+
+                                  <!-- Contact Form Model Content -->
+                                  <div class="modal-content">
+                                    <span class="close">&times;</span>
+                                    <div class="container">
+                                      <form action="">
+                                    
+                                        <label for="fname">First Name</label>
+                                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                    
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                    
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" name="email" placeholder="Your email">
+                                    
+                                        <label for="subject">We Love To Hear From You</label>
+                                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                                    
+                                        <input type="submit" value="Submit">
+                                    
+                                      </form>
+                                    </div>
+                                  </div>
+
+                                  </div> 
                         <li class="active"><div class="dropdown">
                         <a href="#" onclick="myFunction()" class="dropbtn">Interests</a>
-                          <div id="myDropdown" class="dropdown-content">
+                            <div id="myDropdown" class="dropdown-content">
                             <a href="#knit">Knit</a>
                             <a href="#sew">Sew</a>
                             <a href="#dye">Dye</a>
