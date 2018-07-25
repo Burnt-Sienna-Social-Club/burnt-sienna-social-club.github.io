@@ -27,7 +27,7 @@ body {
     margin: 0;
     font-family: 'Allerta Stencil', sans-serif;
     color: #f1f1f1;
-    font-size: 1rem;
+    font-size: 1.5rem;
 
 }
 
@@ -104,25 +104,25 @@ body {
 
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
 }
 
 /* Modal Content/Box */
 .modal-content {
     background-color: #f1f1f1;
-    margin: 15% auto; /* 15% from the top and centered */
+    margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 80%; 
 }
 
 /* The Close Button */
@@ -188,6 +188,14 @@ input[type=submit]:hover {
     border-radius: 5px;
 }
 
+h1,
+p {
+    text-align: center;
+}
+
+h1 {
+    padding: 1rem;
+}
 
 
 .social {
@@ -212,6 +220,12 @@ h1 {
     font-size: 2rem;
     display: block;
     margin: auto;
+}
+
+p {
+    display: block;
+    margin: auto;
+    font-size: 1.2rem;
 }
 
 
@@ -286,17 +300,18 @@ h1 {
 /* back to top button styling */
 
 .bck2top {
-    padding: .5rem;
+    padding: 1rem;
     margin-bottom: .5rem;
     margin-right: 1rem;
     border-radius: 50%;
     z-index: 90; 
-    max-width: 7rem;
+    max-width: 8.5rem;
     position: sticky;
     bottom: .5rem;
     display: block;
     float: right;
     font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1.2rem;
     background-color: #717171;
 }
 
@@ -505,6 +520,7 @@ footer {
                 opacity: 0.7;
                 border-radius: 50%;
                 margin-left: -1rem;
+                
             }
             
             .community {  
@@ -548,9 +564,41 @@ footer {
                 flex-direction: row;
                 flex-wrap: wrap;
                 width: 98%;
+                align-items: baseline;
                 justify-content: center;
+                align-content: space-betwen;
             }
 
+            .social {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            .sew,
+            .dye,
+            .water,
+            .comm,
+            .more,
+            social {
+                flex-grow: 1;
+            }
+
+            .about,
+            .knit {
+                flex-grow: 10;
+            }
+            
+            p{
+                max-width: 40rem;
+            }
+
+            .picture {
+                max-width: 30rem;
+            }
+
+
+            .bck2top {
+                display: none;
+            }
            
 
             
@@ -654,10 +702,14 @@ footer {
     }
 
     /* media query for flexbox large screen */
+    
+    .more {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-top: 1rem;
+    }
 
-    /* .mainContainer{
-           
-    } */
+
 
     
 
